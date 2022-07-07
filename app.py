@@ -10,7 +10,7 @@ def index():
 @app.route('/chatbot', methods=('POST','GET'))
 def chatbot():
     req = request.get_json(force=True)
-    print('----------')
+    print('--------01010--')
     print(req)
     # return jsonify(fulfillmentText = '챗봇 접속 성공') # 글자만 전송
     return jsonify(fulfillment_messages = [
